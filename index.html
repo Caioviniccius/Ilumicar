@@ -162,7 +162,7 @@
   /* ---------- Product rail (mobile: horizontal snap) ---------- */
   .rail-scroll{
     display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory;
-    padding:4px 20px 14px; margin:0 -20px;
+    padding:4px 13vw 14px; margin:0 -20px;
     -webkit-overflow-scrolling:touch; scrollbar-width:none;
   }
   .rail-scroll::-webkit-scrollbar{ display:none; }
@@ -171,14 +171,14 @@
   .card{
     background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
     overflow:hidden; display:flex; flex-direction:column;
-    flex:0 0 78vw; scroll-snap-align:start;
+    flex:0 0 74vw; scroll-snap-align:center;
     transition:transform .25s, border-color .25s, box-shadow .25s;
   }
   .card:active{ transform:scale(0.98); }
   .card:hover{ border-color:var(--red); box-shadow:0 14px 30px rgba(0,0,0,0.35); }
   .card:hover .card-art::after{ transform:translateX(480%); }
 
-  .card-art{ position:relative; aspect-ratio:1/1; height:auto; overflow:hidden; background:#0d0d0e; }
+  .card-art{ position:relative; aspect-ratio:1/0.95; height:auto; overflow:hidden; background:#0d0d0e; }
   .card-art img{ width:100%; height:100%; object-fit:cover; filter:saturate(1.05) contrast(1.03); }
   .card-art::before{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 55%, rgba(10,10,11,0.55)); z-index:1; }
   .card-art::after{
@@ -531,8 +531,8 @@
         <h3>LED Pingo T10 — Modelo 1</h3>
         <p class="desc">Lâmpada T10 para lanterna e placa, encaixe padrão, luz branca.</p>
         <div class="card-footer">
-          <div class="price">R$ 10<span>o par</span></div>
-          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20LED%20Pingo%20T10%20%E2%80%94%20Modelo%201%20%28R%24%2010%20o%20par%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
+          <div class="price">R$ 10<span>unidade</span></div>
+          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20LED%20Pingo%20T10%20%E2%80%94%20Modelo%201%20%28R%24%2010%20unidade%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
         </div>
       </div>
     </div>
@@ -544,8 +544,8 @@
         <h3>LED Pingo T10 — Modelo 2</h3>
         <p class="desc">Chip COB de maior área de iluminação, ótimo custo-benefício.</p>
         <div class="card-footer">
-          <div class="price">R$ 10<span>o par</span></div>
-          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20LED%20Pingo%20T10%20%E2%80%94%20Modelo%202%20%28R%24%2010%20o%20par%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
+          <div class="price">R$ 10<span>unidade</span></div>
+          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20LED%20Pingo%20T10%20%E2%80%94%20Modelo%202%20%28R%24%2010%20unidade%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
         </div>
       </div>
     </div>
@@ -557,8 +557,8 @@
         <h3>LED Pingo T10 Clássico</h3>
         <p class="desc">5 chips 5050, branco puro, o queridinho pra lanterna e placa.</p>
         <div class="card-footer">
-          <div class="price">R$ 10<span>o par</span></div>
-          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20LED%20Pingo%20T10%20Cl%C3%A1ssico%20%28R%24%2010%20o%20par%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
+          <div class="price">R$ 10<span>unidade</span></div>
+          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20LED%20Pingo%20T10%20Cl%C3%A1ssico%20%28R%24%2010%20unidade%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
         </div>
       </div>
     </div>
@@ -570,8 +570,8 @@
         <h3>LED Pingo T10 Canbus</h3>
         <p class="desc">Placa canbus multi-chip, sem erro de painel em carros injetados.</p>
         <div class="card-footer">
-          <div class="price">R$ 15<span>o par</span></div>
-          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20LED%20Pingo%20T10%20Canbus%20%28R%24%2015%20o%20par%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
+          <div class="price">R$ 15<span>unidade</span></div>
+          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20LED%20Pingo%20T10%20Canbus%20%28R%24%2015%20unidade%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
         </div>
       </div>
     </div>
@@ -583,8 +583,8 @@
         <h3>Projetor LED H4</h3>
         <p class="desc">Módulo projetor compacto, corte de luz preciso, encaixe universal.</p>
         <div class="card-footer">
-          <div class="price">R$ 249,90<span>unidade</span></div>
-          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Projetor%20LED%20H4%20%28R%24%20249%2C90%20unidade%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
+          <div class="price">R$ 249,90<span>o par</span></div>
+          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Projetor%20LED%20H4%20%28R%24%20249%2C90%20o%20par%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
         </div>
       </div>
     </div>
@@ -596,8 +596,8 @@
         <h3>Projetor LED H4 Y7D</h3>
         <p class="desc">Versão Y7D com maior fluxo luminoso e dissipador reforçado.</p>
         <div class="card-footer">
-          <div class="price">R$ 349,90<span>unidade</span></div>
-          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Projetor%20LED%20H4%20Y7D%20%28R%24%20349%2C90%20unidade%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
+          <div class="price">R$ 349,90<span>o par</span></div>
+          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Projetor%20LED%20H4%20Y7D%20%28R%24%20349%2C90%20o%20par%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
         </div>
       </div>
     </div>
@@ -661,8 +661,8 @@
         <h3>Super LED Meia Luz e Freio</h3>
         <p class="desc">Lâmpada dupla função, luz de posição e freio no mesmo soquete.</p>
         <div class="card-footer">
-          <div class="price">R$ 45<span>unidade</span></div>
-          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Super%20LED%20Meia%20Luz%20e%20Freio%20%28R%24%2045%20unidade%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
+          <div class="price">R$ 45<span>o par</span></div>
+          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Super%20LED%20Meia%20Luz%20e%20Freio%20%28R%24%2045%20o%20par%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
         </div>
       </div>
     </div>
@@ -674,8 +674,8 @@
         <h3>Super LED para Ré</h3>
         <p class="desc">Alto brilho branco, ideal para luz de ré mais visível à noite.</p>
         <div class="card-footer">
-          <div class="price">R$ 45<span>unidade</span></div>
-          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Super%20LED%20para%20R%C3%A9%20%28R%24%2045%20unidade%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
+          <div class="price">R$ 45<span>o par</span></div>
+          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Super%20LED%20para%20R%C3%A9%20%28R%24%2045%20o%20par%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
         </div>
       </div>
     </div>
@@ -687,8 +687,8 @@
         <h3>Super LED Seta</h3>
         <p class="desc">Tom âmbar intenso, resposta rápida, sem efeito hyperflash.</p>
         <div class="card-footer">
-          <div class="price">R$ 45<span>unidade</span></div>
-          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Super%20LED%20Seta%20%28R%24%2045%20unidade%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
+          <div class="price">R$ 45<span>o par</span></div>
+          <a class="btn-wa" href="https://wa.me/557488460249?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Super%20LED%20Seta%20%28R%24%2045%20o%20par%29.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener"><svg class="wa-icon"><use href="#wa-glyph"/></svg> Comprar</a>
         </div>
       </div>
     </div>
@@ -851,7 +851,7 @@
       <div class="step reveal">
         <span class="num">03</span>
         <h3>Receba e instale</h3>
-        <p>Compre o led e instalamos pessoalmente o led no seu carro ou moto</p>
+        <p>Compre o led e instalamos pessoalmente o led no seu carro ou moto.</p>
       </div>
     </div>
   </div>
